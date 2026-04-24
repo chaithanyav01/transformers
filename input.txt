@@ -1,0 +1,38 @@
+Shubham Pachpande | AI Engineer | Bengaluru, India
+
+ROLE:
+Associate Applied Research Engineer at Skellam AI
+- Builds AI agents and LLM-based systems
+- Works on generative AI and production ML systems
+- Focus: scalable deployment, inference optimization
+
+EXPERIENCE:
+Thoughtworks | Application Developer
+- Backend systems, distributed applications
+- Strong software engineering fundamentals
+
+EDUCATION:
+M.Tech, Computer Science | IISc Bangalore
+- Focus: ML, RL, NLP, Transformers
+
+B.Tech | Walchand College of Engineering, Sangli
+- Algorithms, data structures, software engineering
+
+SKILLS:
+- AI/ML: Transformers, LLMs, CNN, RNN, RL
+- Systems: Scalable pipelines, APIs, cloud deployment
+- Tools: PyTorch, LangChain
+
+PROJECTS:
+- Built GPT-style models from scratch
+- Designed conversational AI and chatbots
+- Developed RAG pipelines and AI agents
+- Worked on multimodal systems (text + image)
+
+STRENGTHS:
+- Strong ML fundamentals (probability, optimization)
+- Clean and modular coding
+- Focus on production-ready AI systems
+
+INTERESTS:
+Generative AI, Multimodal models, AI agents, RL systems

@@ -143,24 +143,24 @@ optimizer = torch.optim.AdamW(model.parameters(), lr=3e-4)
 block_size = 64
 batch_size = 32
 
-for step in range(1000):
-    x, y = get_batch('train', block_size, batch_size)
-    x, y = x.to(device), y.to(device)
+# for step in range(1000):
+#     x, y = get_batch('train', block_size, batch_size)
+#     x, y = x.to(device), y.to(device)
     
-    logits = model(x)
+#     logits = model(x)
     
-    B, T, V = logits.shape
-    loss = F.cross_entropy(logits.view(B*T, V), y.view(B*T))
+#     B, T, V = logits.shape
+#     loss = F.cross_entropy(logits.view(B*T, V), y.view(B*T))
     
-    optimizer.zero_grad()
-    loss.backward()
-    optimizer.step()
+#     optimizer.zero_grad()
+#     loss.backward()
+#     optimizer.step()
     
-    if step % 200 == 0:
-        print(f"step {step} loss {loss.item():.4f}")
+#     if step % 200 == 0:
+#         print(f"step {step} loss {loss.item():.4f}")
 
 # Save the model
-torch.save(model.state_dict(), "model.pt")
+# torch.save(model.state_dict(), "model.pt")
 
 # -----------------------------
 # 4. GENERATION
@@ -183,10 +183,10 @@ def generate(model, start, max_new_tokens=100):
 
 
 # load the model for inference
-# model.load_state_dict(torch.load("model.pt"))
+model.load_state_dict(torch.load("model.pt"))
 
 # -----------------------------
 # 5. TEST
 # -----------------------------
 print("\nGenerated:\n")
-print(generate(model, start="Shubham Wife", max_new_tokens=200))
+print(generate(model, start="Shubham Education", max_new_tokens=300))
